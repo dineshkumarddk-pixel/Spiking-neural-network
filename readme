@@ -1,1 +1,35 @@
+Spiking Neural Network Hardware Accelerator
 
+A Verilog-based hardware implementation of a Spiking Neural Network (SNN) designed for efficient neuromorphic computation and FPGA/ASIC prototyping. This project focuses on building a multilayer SNN architecture with dedicated neuron cores, memory modules, FIFO buffering, layer controllers, and classification logic for applications such as MNIST-style pattern recognition. The repository provides a modular framework for exploring low-power, event-driven neural computation in digital hardware.
+
+Key Features
+Hardware implementation of multilayer Spiking Neural Network architecture
+Modular Verilog design for neuron cores, hidden layers, and output layer
+FIFO-based spike data flow management
+Layer-wise control modules for synchronized spike propagation
+Weight and input memory blocks for dataset integration
+Argmax and spike counter modules for final classification
+Designed for FPGA prototyping and neuromorphic accelerator research
+Repository Structure
+
+Core modules include:
+
+neuron_core.v – Fundamental spiking neuron processing unit
+weights_memory_snn.v – Synaptic weight storage
+mnist_input_memory.v – Input sample memory interface
+FIFO.v – Spike buffering and synchronization
+layer_control_* – Hidden and output layer control modules
+argmax.v – Final output decision logic
+snn_accelerator_top_3.v – Top-level accelerator integration
+
+Authors
+Dr. D. Dinesh Kumar
+S.P.T.N. Naga Meena
+J. Monisha
+
+Department of Electronics and Communication Engineering
+Mepco Schlenk Engineering College
+Sivakasi – 626123, Tamil Nadu, India
+
+License
+This project is intended for academic, research, and educational purposes. Please cite the authors and institution when using or extending this work.
